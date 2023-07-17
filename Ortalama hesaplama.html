@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>..:: Ortalama Hesaplama ::..</title>
+<meta http-equiv="Content-Type" content="text/htm; charset=utf-8">
+    <style type="text/css">
+
+        #hesapla
+        {
+             background: linear-gradient(to top left, #9900cc 0%, #66ffcc 100%);
+            text-align:center;
+            width: 300px;
+            height:30px;
+            
+        }
+        .cerceve
+        {
+            border: solid 	#FF6347  2px;
+            
+            
+            }
+         .tblarka
+         {
+             
+              background: linear-gradient(to bottom, #3366cc 0%, #66ffcc 100%);
+             
+             
+             }
+            
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       
+    </style>
+   
+
+    <script language="javascript" type="text/javascript">
+        function hesapla() {
+
+            var sayi1 = parseInt(sinav.value) ;
+            var sayi2 = parseInt(sinavv.value) ;
+            var sayi3 = parseInt(sinavvv.value) ;
+            var sayi4 = parseInt(sinavvvv.value) ;
+			var sayi5 = 4;
+			var sayi6 = sayi1 + sayi2 + sayi3 + sayi4 ;
+			var Sonuc = sayi6 / 4 ;
+			ortalama.innerHTML = Sonuc;
+            
+
+        }
+
+
+    </script>
+
+
+</head>
+<body> 
+
+
+<table border="0" width="100%" height="100%" class="cerceve" style="  background: linear-gradient(to top left, #ffffff 0%, #000099 100%);">
+	<tr>
+		<td align="center" valign="middle" class="style5">
+		<!-- bu hucrenin içerisine yerlestirilen tum nesneler ekranda ortalanir -->
+		
+		<table border="2" ; color:"red" width="300px"  style="background-color:#ffff00 ; height:190px">
+		<tr>
+		    <td colspan="2" style="text-align:center ; color:black"  class="tblarka">Ortalama Hesaplama</td>
+		</tr>
+
+		<tr>
+		        <td style="text-align:center ; color:black" class="tblarka">
+                      1.Sınav
+                </td>
+		        <td align="center" class="tblarka">        
+                     <input type="text" id="sinav"  value=""  style="background-color:#C0C0C0; width: 150px; height:20px">&nbsp;
+               </td>
+		</tr>
+
+		<tr>
+		<td  style="text-align:center ; color:black" class="tblarka">
+                 2.Sınav
+        </td>
+		<td  align="center" class="tblarka">
+            
+            <input maxlength="10" type="text" id="sinavv" value="" style="background-color:#C0C0C0; width: 149px;" 
+                align="middle"/></td>
+		</tr>
+
+       
+
+        
+            
+           
+            
+        
+        </td>	
+
+         </tr>
+
+
+
+
+
+            <tr>
+		<td class="tblarka"  style="color:black" align="center">1.Sözlü</td>
+		<td id="hesaplanmis" class="tblarka" align="center" style="color:black">		
+            <input maxlength="10" 
+                type="text" id="sinavvv" value="" style="background-color:#C0C0C0; width: 149px;" 
+                align="middle"/></td>
+		    </tr>
+       
+       <br/> <br/><br/><br/>
+      
+
+
+
+       <tr>
+            <td  class="tblarka" style="text-align:center;  ; color:black">2.Sözlü</td>
+            <td class="tblarka" style="text-align:center ;class="tblarka">
+           
+             <input maxlength="10"  type="text" id="sinavvvv" value="" style="background-color:#C0C0C0; width: 149px; " align="middle"/></td>
+                
+       </tr>
+               
+       
+       <tr>
+            <td class="tblarka" style="text-align:center ; class="tblarka" color:black" >Ders Ortalamanız</td>
+            <td class="tblarka" id="ortalama"; style="text-align:center ; color:black ; font-size:20px"></td>
+       </tr>
+       <tr>
+          <td colspan="2">  <input class="btn8" type="button" id="hesapla" value="HESAPLA" onClick="hesapla()" /> </td>
+            
+       </tr>
+
+
+		</table>
+		
+		
+		</td>
+	</tr>
+</table>
+<!--ortalamada kullandığımız tablonun sonu -->
+</body> 
+
+</html>
